@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SumController {
  int usages = 0;
-    @RequestMapping
+    @RequestMapping("/sum")
     public int sum(@RequestParam int a, @RequestParam int b, @RequestParam int c, @RequestParam int d){
         usages++;
         return a+b+c+d;
